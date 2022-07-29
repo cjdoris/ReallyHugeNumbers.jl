@@ -1,13 +1,14 @@
 # ReallyHugeNumbers.jl
 
-A Julia package for working with really huge numbers.
+A Julia package for working with **really huge** numbers.
 
 The other package [`HugeNumbers.jl`](https://github.com/cjdoris/HugeNumbers.jl) provides a
 number type `Huge` for working with huge numbers. It represents the number `x` by storing
 `invhugen(x)`, which is the inverse of the function `hugen(x)`, which grows/shrinks
 exponentially as `x` gets large/small.
 
-This package exports the type `ReallyHuge` so that:
+But what if a `Huge` number isn't huge enough? Enter `ReallyHuge` numbers!
+
 - `ReallyHuge(x) == x`
 - `ReallyHuge(x, 1) == hugen(x)`
 - `ReallyHuge(x, 2) == hugen(hugen(x))`
