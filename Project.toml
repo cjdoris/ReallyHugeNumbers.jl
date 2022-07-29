@@ -1,0 +1,7 @@
+name = "ReallyHugeNumbers"
+uuid = "e75df27f-0caf-4827-9729-bc0b8b56f6ef"
+authors = ["Christopher Doris <github.com/cjdoris>"]
+version = "0.1.0"
+
+[deps]
+HugeNumbers = "8b714bcc-5b7b-49cb-932b-e206ca82d2bc"
